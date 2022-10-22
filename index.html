@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Khushi" />
+    <meta
+      name="description"
+      content="Project on Html,jQuery,Ajax,Php and Remote API's."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>AjaxPHP_Project</title>
+      <link href="libs/css/style.css" rel="stylesheet" /> 
+  </head>
+  <!-- Preloader-->
+  <body onload="myFunction()">
+    <h1>
+        <span>Ajax</span>
+    </h1>
+    <h2>
+      Project on Html,jQuery,Ajax,Php and Remote API's.
+    </h2>
+  <!-- Preloader-->
+    <div id="preloader">
+      <img src="libs/img/preloader.gif" alt="preloader">
+    </div>
+    <!--Table Start-->
+    <div id="table">
+      <table>
+        <thead>
+            <tr id="head">
+            <th>API Name</th>
+            <th>API Description</th>
+            <th>Submit Button</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="apiName">Earthquakes</td>
+            <td class="apiDescription">
+              Returns a list of earthquakes,ordered by magnitude
+            </td>
+            <td class="circle">
+            <button class="submitButton" id="earthquakesBtn">Submit</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="apiName">Hierarchy</td>
+            <td class="apiDescription">
+              Returns all GeoNames higher up in the hierarchy of a place name.
+            </td>
+            <td class="circle">
+              <button class="submitButton" id="hierarchyBtn">Submit</button>
+            </td>
+          </tr>
+
+         <tr>
+            <td class="apiName">Country Subdivision</td>
+            <td class="apiDescription">
+                Returns the country and the administrative subdivison (state, province,...) for the given latitude/longitude.
+            </td>
+            <td class="circle">
+              <button class="submitButton" id="countrySubBtn">Submit</button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="7" id="results">Results:</td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+
+    <script src="libs/js/jquery-2.2.3.min.js"></script>
+    <script src="libs/js/script.js"></script>
+  </body>
+</html>
